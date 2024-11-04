@@ -1,0 +1,45 @@
+<div id="register-container" class="container">
+  <form (ngSubmit)="register()">
+    <h1>Join With Us</h1>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        [(ngModel)]="registerData.staffName"
+        name="name"
+        placeholder="name"
+        required
+      />
+      <label for="name">Full Name</label>
+    </div>
+    <div class="form-group">
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        [(ngModel)]="registerData.staffEmail"
+        name="email"
+        placeholder="email"
+        required
+      />
+      <label for="email">Email Address</label>
+    </div>
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        [(ngModel)]="registerData.staffPassword"
+        name="password"
+        placeholder="password"
+        required
+      />
+      <label for="password">Password</label>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="register-btn">Register</button>
+    </div>
+    <a routerLink="">Log in</a>
+  </form>
+</div>
